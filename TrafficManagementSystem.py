@@ -397,11 +397,14 @@ class TrafficAnalyzer:
             plt.savefig('prediction_accuracy.png', dpi=300, bbox_inches='tight')
             plt.show()
             
-            return model, feature_importance
+            self.forecast_model = model
+            self.feature_importance = feature_importance
+            
+            return self
             
         except ImportError:
             print("Scikit-learn not available. Skipping forecasting model.")
-            return None, None
+            return self
     
     def generate_recommendations(self):
         """Generate infrastructure and traffic management recommendations"""
@@ -507,7 +510,7 @@ class TrafficAnalyzer:
 # Main execution
 if __name__ == "__main__":
     # Initialize analyzer
-    analyzer = TrafficAnalyzer('train_aWnotuB.csv', 'datasets_8494_11879_test_BdBKkAj.csv')
+    analyzer = TrafficAnalyzer('data/train_aWnotuB.csv', 'data/datasets_8494_11879_test_BdBKkAj.csv')
     
     # Run complete analysis
     analyzer.run_complete_analysis()

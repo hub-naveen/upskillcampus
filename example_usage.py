@@ -6,7 +6,7 @@ This script demonstrates how to use the TrafficAnalyzer class
 for different types of analysis and customizations.
 """
 
-from traffic_analysis import TrafficAnalyzer
+from TrafficManagementSystem import TrafficAnalyzer
 import pandas as pd
 
 def main():
