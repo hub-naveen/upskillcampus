@@ -11,13 +11,13 @@ plt.style.use('seaborn-v0_8')
 sns.set_palette("husl")
 
 class TrafficAnalyzer:
-    def __init__(self, train_file, test_file):
+    def __init__(self, train_file='data/train_aWnotuB.csv', test_file='data/datasets_8494_11879_test_BdBKkAj.csv'):
         """
         Initialize the Traffic Analyzer for smart city traffic management
         
         Args:
-            train_file (str): Path to training dataset
-            test_file (str): Path to test dataset
+            train_file (str): Path to training dataset (default: data/train_aWnotuB.csv)
+            test_file (str): Path to test dataset (default: data/datasets_8494_11879_test_BdBKkAj.csv)
         """
         self.train_file = train_file
         self.test_file = test_file

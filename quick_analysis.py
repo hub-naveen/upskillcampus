@@ -14,8 +14,8 @@ def quick_traffic_analysis():
     
     # Load data
     print("Loading traffic data...")
-    train_data = pd.read_csv('train_aWnotuB.csv')
-    test_data = pd.read_csv('datasets_8494_11879_test_BdBKkAj.csv')
+    train_data = pd.read_csv('data/train_aWnotuB.csv')
+    test_data = pd.read_csv('data/datasets_8494_11879_test_BdBKkAj.csv')
     
     # Convert datetime
     train_data['DateTime'] = pd.to_datetime(train_data['DateTime'])

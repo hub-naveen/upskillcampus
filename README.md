@@ -85,9 +85,9 @@ The system generates several key visualizations:
    pip install -r requirements.txt
    ```
 
-3. **Ensure your data files are in the project directory**:
-   - `train_aWnotuB.csv` (training dataset)
-   - `datasets_8494_11879_test_BdBKkAj.csv` (test dataset)
+3. **Ensure your data files are in the data folder**:
+   - `data/train_aWnotuB.csv` (training dataset)
+   - `data/datasets_8494_11879_test_BdBKkAj.csv` (test dataset)
 
 ## 🚀 How to Run This Project
 

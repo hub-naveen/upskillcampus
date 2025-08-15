@@ -14,7 +14,7 @@ def main():
     print("=" * 50)
     
     # Initialize the analyzer
-    analyzer = TrafficAnalyzer('train_aWnotuB.csv', 'datasets_8494_11879_test_BdBKkAj.csv')
+    analyzer = TrafficAnalyzer('data/train_aWnotuB.csv', 'data/datasets_8494_11879_test_BdBKkAj.csv')
     
     # Example 1: Basic data exploration
     print("\n📊 Example 1: Basic Data Exploration")
